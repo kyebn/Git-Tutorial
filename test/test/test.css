@@ -22,10 +22,17 @@
 
 .variables {
   text-align: center;
+<<<<<<< HEAD
   border: 1px solid #b94848;
 }
 .variables span {
   color: #b94848;
+=======
+  border: 1px solid #1a512f;
+}
+.variables span {
+  color: #1a512f;
+>>>>>>> main
 }
 
 .nesting {
