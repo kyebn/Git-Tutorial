@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.frame {
+    padding : 20px; 
+    border: 1px solid blue;
+    width: 100%;
+    .items {
+        font-weight: bold;
+        color: #781b2e;
+        .item {
+            margin: 10px;
+            font-size: 18px;
+            border: 1px solid #000;
+            list-style: none;
+            display: inline-block;
+        }
+    }
+}
+
+$red:#ff0000;
+
+.variables{
+    text-align: center;
+    border: 1px solid $red;
+    span{
+        color: $red;
+    }
+}
+
+.test-area {
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: block;
+    background-color: #000;
+    min-height: 600px;
+}
