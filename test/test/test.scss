@@ -20,11 +20,8 @@
     }
 }
 
-<<<<<<< HEAD
-$red:#b94848;
-=======
+
 $red:#1a512f;
->>>>>>> main
 
 .variables{
     text-align: center;
@@ -42,6 +39,30 @@ $red:#1a512f;
     color: red;
     
 }
+
+.txt_deco{
+    text-decoration: line-through;
+    background-color: #17fd;
+}
+
+.txt_bd{
+    font-weight: 800
+}
+
+.extand{
+    h1{
+        @extend .txt_deco;
+        a{
+            font-weight: 200;
+            color: $red;
+            span{
+                @extend .txt_bd
+            }
+        }
+    }
+}
+
+@import "test2";
 
 .test-area {
     max-width: 900px;
