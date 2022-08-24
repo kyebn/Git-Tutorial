@@ -28,6 +28,14 @@
   color: #ff0000;
 }
 
+.nesting {
+  border: 1px solid black;
+  color: red;
+}
+.nesting span {
+  margin-top: 10px;
+}
+
 .test-area {
   max-width: 900px;
   margin: 40px auto 0;

@@ -30,6 +30,15 @@ $red:#ff0000;
     }
 }
 
+.nesting{
+    border: 1px solid black;
+    span{
+        margin-top: 10px;
+    }
+    color: red;
+    
+}
+
 .test-area {
     max-width: 900px;
     margin: 40px auto 0;
