@@ -1,5 +1,6 @@
 .import {
   text-align: center;
+  border: 1px solid #fe111f;
 }
 .import span {
   font-weight: bold;

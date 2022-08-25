@@ -46,7 +46,7 @@ $red:#1a512f;
 }
 
 .txt_bd{
-    font-weight: 800
+    font-weight: 800;
 }
 
 .extand{
@@ -56,18 +56,80 @@ $red:#1a512f;
             font-weight: 200;
             color: $red;
             span{
-                @extend .txt_bd
+                @extend .txt_bd;
             }
         }
     }
 }
 
+
 @import "test2";
 
-.test-area {
-    max-width: 900px;
-    margin: 40px auto 0;
-    display: block;
-    background-color: #000;
-    min-height: 600px;
+.shape-01 {
+    border-radius: 50% 0 50% 50%;
 }
+
+.figma{
+    display: flex;
+    width: 20%;
+    margin: 50px auto 0;
+    max-width: 200px;
+    flex-wrap: wrap;
+
+    .headline{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .shape{
+        width: 50%;
+        padding-bottom: 50%;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+        }
+
+        $red: #ff2e2e;
+        $orange: #ff8b0f;
+        $purple: #b654c1;
+        $blue: #6d90eb;
+        $green: #17952a;
+
+        &.shape1::before{
+            @extend .shape-01;
+            background-color: $red;
+        }
+        &.shape2::before{
+            background-color: $orange;
+            border-radius: 0 50% 50%;
+        }
+        &.shape3::before{
+            background-color: $purple;
+            border-radius: 50% 0 0 50%;
+        }
+        &.shape4::before{
+            background-color: $blue;
+            border-radius: 50%;
+        }
+        &.shape5::before{
+            @extend .shape-01;
+            background-color: $green;
+        }
+    }
+}
+
+.test-area {
+     max-width: 900px;
+     margin: 40px auto 0;
+     display: block;
+     background-color: #000;
+     min-height: 600px;
+ }
+
+ .arcodian{}
