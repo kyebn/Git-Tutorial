@@ -5,4 +5,10 @@
 .import span {
   font-weight: bold;
   color: #3d5b68;
+}
+
+.value-what {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid red;
 }/*# sourceMappingURL=test2.css.map */

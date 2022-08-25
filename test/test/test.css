@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul, li {
+  list-style: none;
+}
+
 .frame {
   padding: 20px;
   border: 1px solid blue;
@@ -58,6 +62,12 @@
   color: #3d5b68;
 }
 
+.value-what {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 .shape-01, .figma .shape.shape5::before, .figma .shape.shape1::before {
   border-radius: 50% 0 50% 50%;
 }
@@ -111,4 +121,56 @@
   display: block;
   background-color: #000;
   min-height: 600px;
+}
+
+.arcodian {
+  border: 1px solid black;
+  width: 200px;
+}
+.arcodian > ul {
+  background-color: #3e3e3e;
+}
+.arcodian > ul > li {
+  color: #fff;
+}
+.arcodian > ul > li span {
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+}
+.arcodian > ul > li > ul {
+  overflow: hidden;
+}
+.arcodian > ul > li > ul li {
+  height: 0px;
+  line-height: 30px;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  text-indent: 20px;
+}
+.arcodian > ul > li:hover > ul li {
+  height: 30px;
+}
+.arcodian > span {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+  background-color: #1a512f;
+  color: #fff;
+  font-weight: 600;
+}
+
+.value-what {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid red;
+  justify-content: space-around;
+}
+.value-what__cont {
+  font-weight: bold;
+}
+.value-what__cont--red {
+  color: red;
 }/*# sourceMappingURL=test.css.map */
